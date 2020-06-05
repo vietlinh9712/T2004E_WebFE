@@ -1,0 +1,18 @@
+h1{
+    font-size: 100px;
+
+    font-weight: inherit;/* độ nhạt của chữ nomal = 400, bold = 700, 100- 900*/
+    line-height: 4;/* do cao cua dong, tu dong nhan theo font- size" */
+    text-decoration:underline;/* gach chan o chu - underline gach duoi- line-through gach giua- overline gach  giua*/
+    color: #ffffff;
+
+}
+
+body{
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;/*căn chữ */
+    background-image: url("../images/633c4db6b8a30581f18048232c88e66e (1).jpg");/* di len thi ../ */
+    background-position: center; /* vi tri cua  background*/
+    background-size: cover;/* chinh sua anh bacckground cho vua*/
+    border: 1px solid #ffffff; /* vẽ đường biên 1px là kích cỡ solid là loại nét cuối cùng là màu*/
+}
