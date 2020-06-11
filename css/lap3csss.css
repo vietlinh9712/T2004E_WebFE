@@ -101,6 +101,32 @@ img{
     display: inline-block;
 }
 
+.tam_giac_giam_gia{
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-left: 100px solid transparent;
+    float: right;
+    position: absolute;
+    margin-left: 198px;
+    z-index: 7;
+}
+
+.so_giam_gia{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    right: 5px;
+    bottom: 50px;
+    position: absolute;
+    z-index: 8;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #f2f2f2;
+
+}
+
 .color_background_grey{
     background-color: #f2f2f2;
 }
@@ -146,28 +172,3 @@ img{
     margin-top: 50px;
 }
 
-.tam_giac_giam_gia{
-    width: 0;
-    height: 0;
-    border-top: 100px solid red;
-    border-left: 100px solid transparent;
-    float: right;
-    position: absolute;
-    margin-left: 198px;
-    z-index: 7;
-}
-
-.so_giam_gia{
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    right: 5px;
-    bottom: 50px;
-    position: absolute;
-    z-index: 8;
-    font-weight: 600;
-    font-size: 1.4em;
-    color: #f2f2f2;
-
-}
