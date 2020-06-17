@@ -1,0 +1,28 @@
+div{
+    width: calc(50% - 20px);// khong biet bo may cho bao nhieu nhung phai chừa lại 20px
+    height: 100px;
+    float: left;
+    border: 1px solid deeppink;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.1;//độ mờ của phần tử
+    color: red;
+    position: relative;tao ban đồ
+    //position: fixed  khong quan tam thang chua nó mps sẽ đi theo khung của người dùng.
+}
+
+span{
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    float: left;
+    border-radius: 100%;// tao hinh tron hoac hinh elip
+}
+
+div > .popup{
+    position: absolute;// dinh vi theo toạ độ chính xác của bản đồ
+    z-index: 9;// độ sâu của phần tử thằng nào lớn hơn thì nằm trên và đè lên thằng duwowisu
+}
