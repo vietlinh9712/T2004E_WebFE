@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vietlot</title>
+</head>
+<body>
+<script type="text/javascript">
+    let x = [];
+    for(let i = 0; i < 5;i++){
+        x[i] = parseInt(Math.random()*50)
+        for(let j = 0 ; j < i ; j++){
+            if(x[i] == x[j]){
+                i--;
+            }
+        }
+    }
+    console.log(x);
+    let y = [];
+    for (let i = 0;i < 5; i++){
+        y[i] = prompt("Nhập số không trùng số trước và nhỏ hơn 50");
+        for(let j = 0 ; j < i ; j++){
+            if(y[i] == y[j] || y[j] > 50){
+                i--;
+                alert("nhập lại số vừa nhập vì bị trùng hoặc lớn hơn 50");
+            }
+        }
+    }
+    let count = 0;
+    for (let i = 0 ; i < 5 ; i++) {
+        if (x[i] == y[i]) {
+            count++;
+        }
+    }
+    if(count < 2){
+        alert("xịt rồi");
+    }else if(count == 3){
+        alert("trúng giải 3");
+    }else if(count == 4){
+        alert("trúng giải nhì");
+    }else if(count == 5){
+        alert("trúng giải nhất");
+    }
+</script>
+</body>
+</html>
