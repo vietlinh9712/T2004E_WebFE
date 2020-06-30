@@ -48,7 +48,7 @@ label{
 }
 
 .popup{
-    width: 500px;
+    width: 550px;
     height: 600px;
     background-color: white;
     border-radius: 5px;
@@ -67,8 +67,9 @@ label{
 }
 
 .body{
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
 }
 
 

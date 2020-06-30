@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // let obj = {
+        //   name : "Trinh Quang Hoa",
+        //   age : 18,
+        //   address : "So 8, Ton That Thuyet, Ha Noi",
+        //
+        //   run : function () {
+        //     console.log("Running...");
+        //   }
+        // };
+        //
+        // console.log(obj.name);
+        // obj.run();
+        // /* this là tên ngầm định bên trong đối tượng*/
+
+        let obj = {
+            Name: "T2004E",
+            ClassRoom: "A8",
+            Teacher: {
+                Name: "Trinh Quang Hoa",
+                Age: 18,
+                Address: "Kaeng Nam"
+            },
+            DSSV: [
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                 {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                },
+                {
+                    Name: "ABC",
+                    Age: 18,
+                    Address: "abc"
+                }
+            ],
+
+            ShowINfo: function () {
+                this.DSSV.map(e =>{
+                    console.log(e);
+                })
+            }
+        }
+        console.log(obj.DSSV);
+        obj.ShowINfo();
+    </script>
+
+
+</body>
+</html>

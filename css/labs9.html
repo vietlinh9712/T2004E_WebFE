@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="labs9.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Xác định vị trí trong tabs</h1>
+        <div class="wrap-btn">
+            <button class="btn home" onclick="Display(1)" >Home</button>
+            <button class="btn" onclick="Display(2)">Profile</button>
+            <button class="btn" onclick="Display(3)">Messages</button>
+            <button class="btn" onclick="Display(4)">Settings</button>
+            <div class="space"></div>
+        </div>
+        <div class="wrap-content">
+            <div id="home" class="Content">This is Home</div>
+            <div id="Profile" class="Content">This is Profile</div>
+            <div id="Messages" class="Content">This is Messages</div>
+            <div id="Settings" class="Content">This is Setting</div>
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+    // function Home() {
+    //     document.getElementById("home").style.opacity = 1;
+    //     document.getElementById("Profile").style.opacity = 0;
+    //     document.getElementById("Messages").style.opacity = 0;
+    //     document.getElementById("Settings").style.opacity = 0;
+    // }
+    //
+    // function Profile() {
+    //     document.getElementById("home").style.opacity = 0 ;
+    //     document.getElementById("Profile").style.opacity = 1;
+    //     document.getElementById("Messages").style.opacity = 0;
+    //     document.getElementById("Settings").style.opacity = 0;
+    // }
+    //
+    // function Messages() {
+    //     document.getElementById("home").style.opacity = 0;
+    //     document.getElementById("Profile").style.opacity = 0;
+    //     document.getElementById("Messages").style.opacity = 1;
+    //     document.getElementById("Settings").style.opacity = 0;
+    // }
+    //
+    // function Settings() {
+    //     document.getElementById("home").style.opacity = 0;
+    //     document.getElementById("Profile").style.opacity = 0;
+    //     document.getElementById("Messages").style.opacity = 0;
+    //     document.getElementById("Settings").style.opacity = 1;
+    // }
+
+    function Display(e) {
+        let Content = document.getElementsByClassName("Content");
+
+    }
+</script>
+</body>
+</html>

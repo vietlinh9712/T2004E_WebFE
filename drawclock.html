@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/drawclock.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="wrap-clock">
+        <div class="clock-face" onload="displayClock()">
+            <img src="images/dongho.jpg" style="width: 400px;height: 400px" alt="mat dong ho">
+            <div class="chamtron"></div>
+            <div id="seconds-hand" class="kim" ></div>
+            <div id="minutes-hand" class="kim"></div>
+            <div id="hour-hand" class="kim"></div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    function displayClock() {
+        let date = new Date();
+        let seconds = date.getSeconds();
+        let minutes = date.getMinutes();
+        let hour = date.getHours();
+        const secondsHand = document.getElementById("seconds-hand");
+        const minutesHand = document.getElementById("minutes-hand");
+        const hourHand = document.getElementById("hour-hand");
+        console.log(seconds);
+        console.log(hour);
+        secondsHand.style.transform = "rotate("+(seconds*6)+"deg)";
+        minutesHand.style.transform = "rotate("+(minutes*6)+"deg)";
+        hourHand.style.transform = "rotate("+((hour*30)+36*((parseFloat(minutes)/60)))+"deg)";
+        setTimeout(displayClock,1000);
+    }
+    displayClock();
+</script>
+</body>
+</html>

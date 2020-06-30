@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="wrap-all">
+        <div class="wrap-slider">
+            <div class="wrap-content">
+                <div class="content">
+                    <img src="images/slider/anh1.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh2.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh3.1.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh4.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh5.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh6.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh7.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh8.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh9.jpg" alt="anh1">
+                </div>
+                <div class="content">
+                    <img src="images/slider/anh10.jpg" alt="anh1">
+                </div>
+            </div>
+            <a href="#" id="btn-next" class="btn">></a>
+            <a href="#" id="btn-back" class="btn"><</a>
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+    const content = document.getElementsByClassName("content");
+    const nextButton = document.getElementById("btn-next");
+    const backButton = document.getElementById("btn-back");
+    var i = 0;
+    this.onkeydown = (event) => {
+        let key = event.keyCode;
+        console.log(event);
+        if (key === 37){
+            if(i > 0) i--;
+            else i = content.length - 1;
+            moveSlide(i);
+        }
+        if(key === 39){
+            if(i < content.length-1) i++;
+            else i = 0;
+            moveSlide(i);
+        }
+    }
+    nextButton.onclick = () =>{
+        if(i < content.length-1) i++;
+        else i = 0;
+        moveSlide(i);
+    };
+    backButton.onclick = () =>{
+        if(i > 0) i--;
+        else i = content.length - 1;
+        moveSlide(i);
+    };
+    function moveSlide(i) {
+        for(let j = 0; j < content.length ; j++){
+            content[j].style.transform = "translateX(-"+(i*450)+"px)";
+        }
+    }
+</script>
+</body>
+</html>

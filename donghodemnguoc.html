@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/donghodemnguoc.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="box">
+        <form name="abc" action="#" method="gets">
+            <label>
+                <span>so gio</span>
+                <input id="sogio" name="input" type="number"/>
+                <input type="button" class="btn-sumbit" onclick="setMinutes()"/>
+            </label>
+
+        </form>
+        <div class="clock">
+            <div id="time" class="number"></div>
+        </div>
+        <button type="button" name="btn" class="btn" onclick="Start()">Start</button>
+    </div>
+<script type="text/javascript">
+    let minutes = 0;
+    let seconds = 0;
+    let interval;
+    document.getElementById("time").innerHTML = checkTime(minutes) + ":" + checkTime(seconds);
+
+    function setMinutes() {
+        clearInterval(interval);
+        seconds = 0;
+        minutes = document.getElementById("sogio").value;
+        document.getElementById("time").innerHTML = checkTime(minutes) + ":" + checkTime(seconds);
+    }
+
+    function Time() {
+        if (Number(seconds) <= 0){
+            seconds = 60;
+            minutes--;
+            minutes = checkTime(minutes);
+        }
+        Number(seconds--);
+        seconds = checkTime(seconds);
+        document.getElementById("time").innerHTML = minutes + ":" + seconds;
+        if (Number(minutes) == 0 && Number(seconds) == 0) interval = clearInterval(interval);
+    }
+
+    function Start() {
+        clearInterval(interval);
+        interval = setInterval(Time,1000);
+    }
+
+    function checkTime(e) {
+        if(e < 10) e = "0" + e;
+        return e;
+    }
+</script>
+</body>
+</html>
