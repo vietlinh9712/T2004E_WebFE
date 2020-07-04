@@ -9,11 +9,12 @@
 
 <script type="text/javascript">
     let api_url = "https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=439d4b804bc8187953eb36d2a8c26a02";
-    $.ajax = {
+    $.GET = {
         url : api_url,
         method: "GET",
         success: function (rs) {
             console.log(rs);
+            return rs;
         }
     }
 </script>
