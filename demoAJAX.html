@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    let api_url = "https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=439d4b804bc8187953eb36d2a8c26a02";
+    $.ajax = {
+        url : api_url,
+        method: "GET",
+        success: function (rs) {
+            console.log(rs);
+        }
+    }
+</script>
+</body>
+</html>
